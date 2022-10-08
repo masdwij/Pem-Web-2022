@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="playVid()">Play</button>
+         <button onclick="pauseVid()">Pause</button>
+         <button onclick="durationVid()">Duration</button>
+         <button onclick="enableControls()">Enable</button>
+         <button onclick="disableControls()">Disable</button>
+         <button onclick="checkControls()">check</button>
+         <button onclick="myFunction()">Change</button><br>
+        <video style="width: 800px;" id="myVideo">
+            <source src="HorseRider.mp4" type="video/mp4">
+            <track src="cat-herd-id.vtt" kind="subtitles" srclang="id" label="Indonesia"/>
+        </video>
+        <script>
+             var vid = document.getElementById("myVideo");
+
+function myFunction() { 
+   document.getElementById("mp4_src").src = "movie.mp4";
+   document.getElementById("ogg_src").src = "movie.ogg";
+   document.getElementById("myVideo").load();
+} 
+
+function enableControls() { 
+  vid.controls = true;
+   vid.load();
+} 
+
+function disableControls() { 
+   vid.controls = false;
+   vid.load();
+} 
+
+function checkControls() { 
+  alert(vid.controls);
+} 
+
+function durationVid() { 
+   alert(vid.duration);
+}
+ 
+
+function playVid() {
+     vid.play();
+    }
+
+function pauseVid() {
+    vid.pause();
+} 
+        </script>
+    </body>
+</html>
