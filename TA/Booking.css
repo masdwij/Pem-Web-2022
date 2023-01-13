@@ -1,0 +1,169 @@
+body {
+   
+    margin: 0 auto;
+    
+    background-color: lightgray;
+  }
+
+  .row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+.Slideshow{
+    background-color: rgba(58, 56, 56, 0.963);
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.column img{
+  height: 150px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,.demo:hover {
+  opacity: 1;
+}
+
+  form{
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 1%;
+    -ms-flex: 30%; 
+    flex: 30%;
+  }
+
+  .background{
+    background-color: white;
+    border-radius: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.15em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.em;
+    font-family: 'Nanum Gothic';
+    width: 75%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 75%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  button {
+    height: 50px;
+    background: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+    box-shadow: #222;
+  }

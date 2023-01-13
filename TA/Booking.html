@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>D'Kost Peres 78-Kost.In</title>
+        <link rel="stylesheet" href="Booking.css">
+        <script src=""></script>
+    </head>
+    <body>
+      <div class="row">
+        <div class="Slideshow">
+          <div class="container">
+            <center>
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\D'Kost Peres 78.PNG" style="width:35%; height: 650px;">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\kost prese.jpg" style="width:30%; height: 650px;">
+            </div>
+        
+            <div class="mySlides">
+             <div class="numbertext">3 / 4</div>
+              <img src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\kost ruangan.PNG" style="width:30%; height: 650px;">
+            </div>
+          </center>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+         
+            <div class="bottom">
+              <div class="column">
+                <img class="demo cursor" src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\D'Kost Peres 78.PNG" style="width:100%" onclick="currentSlide(1)" alt="Outside">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\kost prese.jpg" style="width:100%" onclick="currentSlide(2)" alt="Room">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="C:\Users\Aurelino Stanta Anka\Documents\Pelajaran kuliah\htdocs\pbw praktek\TA\foto\kost ruangan.PNG" style="width:100%" onclick="currentSlide(3)" alt="Room">
+              </div>
+            </div> 
+            </div>
+            <script src="Slideshow.js"></script>
+        </div>
+
+        <form action="reservation.php" method="post">
+          <div class="background">
+            <center>
+            <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="Nama Anda" pattern=[A-Z\sa-z]{3,20} required>
+              </div>
+              <div class="elem-group">
+                <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="Email anda" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your Phone</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="Nomor telpon anda" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            
+            <div class="elem-group inlined">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkout-date">Check-out Date</label>
+              <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Anything Else?</label>
+              <textarea id="message" name="visitor_message" placeholder="Beri tahu saya apa ada yang lainnya." required></textarea>
+            </div>
+            
+              <button type="submit" formaction="Index.html">Book The Rooms</button>
+            </center>
+          </div>
+        </form>
+      </div>
+    </body>
+</html>

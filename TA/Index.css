@@ -1,0 +1,162 @@
+  body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    left: 0; 
+  }
+
+  nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+  }
+  nav a.Right{
+    float: right;
+  }
+
+  nav a:hover{
+    background: lightgrey;
+    color: black;
+  }
+
+  header{
+    background-image: url(Index.PNG);
+    background-size: cover;
+    color: white;
+    margin-top: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 200px;
+    font-size: larger;
+  }
+
+  .Background{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 400px;
+    
+  }
+
+  .Background h2{
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-left: 75px;
+    font-size: 1cm;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .Pick {
+    float: left;
+    width: 15.3%;
+    padding: 8px;
+    padding-top: 15px;
+    text-align: left;
+    margin-left: 57px;
+  }
+  
+  .Price {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: white;
+    border-radius: 3%;
+    padding-bottom: 5%;
+  }
+
+  .Price a{
+    text-decoration: none;
+  }
+  
+  .Price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+
+  .Price img{
+    width: 100%;
+    height: 200px;
+    border-radius: 3%;
+  }
+
+  .Price li h4{
+    color: black;
+    text-decoration: none;
+  }
+
+  .Price li p{
+    color: black;
+    text-decoration: none;
+  }
+  
+  span{
+    color: black;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .Rating{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(4, 1, 145);
+  }
+  
+  
+
+  .footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 14px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px ;
+    border-radius: 10%;
+  }
+  
+  .fa-instagram {
+    background: #881282;
+    color: white;
+    padding: 14px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px ;
+    border-radius: 10%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+  
+  
+
+  
